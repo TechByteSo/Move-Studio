@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOVE — Фитнес без компромиссов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">MOVE<span class="header__logo-dot">.</span></a>
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="#directions" class="header__nav-link">Тренировки</a></li>
+          <li><a href="#schedule" class="header__nav-link">Расписание</a></li>
+          <li><a href="#trainers" class="header__nav-link">Тренеры</a></li>
+          <li><a href="#contacts" class="header__nav-link">Контакты</a></li>
+        </ul>
+        <a href="#contacts" class="header__btn">Начать</a>
+      </nav>
+
+      <button type="button" class="header__burger" aria-label="Открыть меню" id="burgerBtn">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+
+    <div class="header__overlay" id="menuOverlay" aria-hidden="true"></div>
+    <div class="header__menu" id="mobileMenu">
+      <ul class="header__menu-list">
+        <li><a href="#directions" class="header__menu-link">Тренировки</a></li>
+        <li><a href="#schedule" class="header__menu-link">Расписание</a></li>
+        <li><a href="#trainers" class="header__menu-link">Тренеры</a></li>
+        <li><a href="#contacts" class="header__menu-link">Контакты</a></li>
+        <li><a href="#contacts" class="header__menu-btn">Начать</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__energy" aria-hidden="true">
+      <span class="hero__energy-dot"></span>
+      <span class="hero__energy-dot"></span>
+      <span class="hero__energy-dot"></span>
+      <span class="hero__energy-dot"></span>
+      <span class="hero__energy-dot"></span>
+      <span class="hero__energy-dot"></span>
+    </div>
+    <span class="hero__energy-line hero__energy-line_top"></span>
+    <span class="hero__energy-line hero__energy-line_bottom"></span>
+    <div class="hero__content">
+      <h1 class="hero__title">MOVE OR STAY</h1>
+      <p class="hero__subtitle">Фитнес без компромиссов. Тренировки, которые меняют тело и дух.</p>
+      <div class="hero__buttons">
+        <a href="#directions" class="hero__btn hero__btn_primary">Выбрать программу</a>
+        <a href="#schedule" class="hero__btn hero__btn_secondary">Узнать больше</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section directions animate-in" id="directions">
+    <h2 class="section__title">ВЫБЕРИ СВОЙ <span class="section__title_accent">ПУТЬ</span></h2>
+    <div class="directions__grid">
+      <article class="directions__card">
+        <div class="directions__icon"><i class="fa-solid fa-spa"></i></div>
+        <h3 class="directions__name">ЙОГА</h3>
+        <p class="directions__desc">Гармония тела и духа. Гибкость и сила в каждой сессии.</p>
+      </article>
+      <article class="directions__card">
+        <div class="directions__icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3 class="directions__name">HIIT</h3>
+        <p class="directions__desc">Максимальная отдача за минимальное время. Выложись на все сто.</p>
+      </article>
+      <article class="directions__card">
+        <div class="directions__icon"><i class="fa-solid fa-person-walking"></i></div>
+        <h3 class="directions__name">СТРЕТЧИНГ</h3>
+        <p class="directions__desc">Растяжка и подвижность. Комфорт в теле каждый день.</p>
+      </article>
+      <article class="directions__card">
+        <div class="directions__icon"><i class="fa-solid fa-dumbbell"></i></div>
+        <h3 class="directions__name">ПИЛАТЕС</h3>
+        <p class="directions__desc">Кор, осанка, контроль. Сила изнутри.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section schedule animate-in" id="schedule">
+    <h2 class="section__title">РАСПИСАНИЕ <span class="section__title_accent">ТРЕНИРОВОК</span></h2>
+
+    <div class="schedule__cards">
+      <div class="schedule__day-card">
+        <h3 class="schedule__day-name">ПН</h3>
+        <p class="schedule__day-item"><strong>9:00</strong> Йога</p>
+        <p class="schedule__day-item"><strong>14:00</strong> Стретчинг</p>
+        <p class="schedule__day-item"><strong>18:00</strong> HIIT</p>
+      </div>
+      <div class="schedule__day-card">
+        <h3 class="schedule__day-name">ВТ</h3>
+        <p class="schedule__day-item"><strong>9:30</strong> Пилатес</p>
+        <p class="schedule__day-item"><strong>15:00</strong> Йога</p>
+        <p class="schedule__day-item"><strong>19:00</strong> Стретчинг</p>
+      </div>
+      <div class="schedule__day-card">
+        <h3 class="schedule__day-name">СР</h3>
+        <p class="schedule__day-item"><strong>8:00</strong> HIIT</p>
+        <p class="schedule__day-item"><strong>14:00</strong> Пилатес</p>
+        <p class="schedule__day-item"><strong>18:30</strong> Йога</p>
+      </div>
+      <div class="schedule__day-card">
+        <h3 class="schedule__day-name">ЧТ</h3>
+        <p class="schedule__day-item"><strong>9:00</strong> Стретчинг</p>
+        <p class="schedule__day-item"><strong>13:00</strong> HIIT</p>
+        <p class="schedule__day-item"><strong>19:00</strong> Пилатес</p>
+      </div>
+      <div class="schedule__day-card">
+        <h3 class="schedule__day-name">ПТ</h3>
+        <p class="schedule__day-item"><strong>9:00</strong> Йога</p>
+        <p class="schedule__day-item"><strong>15:00</strong> Стретчинг</p>
+        <p class="schedule__day-item"><strong>18:00</strong> HIIT</p>
+      </div>
+    </div>
+
+    <div class="schedule__accordion">
+      <div class="schedule__item" data-day="monday">
+        <button type="button" class="schedule__item-header">ПН — ГРУППОВЫЕ</button>
+        <div class="schedule__item-body">
+          <div class="schedule__item-content">
+            <div class="schedule__item-row"><span class="schedule__item-time">9:00</span> Йога</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">14:00</span> Стретчинг</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">18:00</span> HIIT</div>
+          </div>
+        </div>
+      </div>
+      <div class="schedule__item" data-day="tuesday">
+        <button type="button" class="schedule__item-header">ВТ — ГРУППОВЫЕ</button>
+        <div class="schedule__item-body">
+          <div class="schedule__item-content">
+            <div class="schedule__item-row"><span class="schedule__item-time">9:30</span> Пилатес</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">15:00</span> Йога</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">19:00</span> Стретчинг</div>
+          </div>
+        </div>
+      </div>
+      <div class="schedule__item" data-day="wednesday">
+        <button type="button" class="schedule__item-header">СР — ГРУППОВЫЕ</button>
+        <div class="schedule__item-body">
+          <div class="schedule__item-content">
+            <div class="schedule__item-row"><span class="schedule__item-time">8:00</span> HIIT</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">14:00</span> Пилатес</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">18:30</span> Йога</div>
+          </div>
+        </div>
+      </div>
+      <div class="schedule__item" data-day="thursday">
+        <button type="button" class="schedule__item-header">ЧТ — ГРУППОВЫЕ</button>
+        <div class="schedule__item-body">
+          <div class="schedule__item-content">
+            <div class="schedule__item-row"><span class="schedule__item-time">9:00</span> Стретчинг</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">13:00</span> HIIT</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">19:00</span> Пилатес</div>
+          </div>
+        </div>
+      </div>
+      <div class="schedule__item" data-day="friday">
+        <button type="button" class="schedule__item-header">ПТ — ГРУППОВЫЕ</button>
+        <div class="schedule__item-body">
+          <div class="schedule__item-content">
+            <div class="schedule__item-row"><span class="schedule__item-time">9:00</span> Йога</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">15:00</span> Стретчинг</div>
+            <div class="schedule__item-row"><span class="schedule__item-time">18:00</span> HIIT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section trainers animate-in" id="trainers">
+    <h2 class="section__title">КОМАНДА, КОТОРАЯ <span class="section__title_accent">ВДОХНОВЛЯЕТ</span></h2>
+    <div class="trainers__grid">
+      <article class="trainers__card">
+        <div class="trainers__photo-wrap">
+          <img src="image/trainers-photo-wrap-anna.jpg" alt="Анна Ковалёва" class="trainers__photo" loading="lazy">
+          <div class="trainers__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="trainers__info">
+          <h3 class="trainers__name">АННА КОВАЛЁВА</h3>
+          <p class="trainers__spec">Йога, Стретчинг</p>
+          <div class="trainers__social">
+            <a href="#" class="trainers__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="trainers__social-link" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </article>
+      <article class="trainers__card">
+        <div class="trainers__photo-wrap">
+          <img src="image/trainers-photo-wrap-maxim.jpg" alt="Максим Петров" class="trainers__photo" loading="lazy">
+          <div class="trainers__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="trainers__info">
+          <h3 class="trainers__name">МАКСИМ ПЕТРОВ</h3>
+          <p class="trainers__spec">HIIT, Функциональный тренинг</p>
+          <div class="trainers__social">
+            <a href="#" class="trainers__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="trainers__social-link" aria-label="VK"><i class="fa-brands fa-vk"></i></a>
+          </div>
+        </div>
+      </article>
+      <article class="trainers__card">
+        <div class="trainers__photo-wrap">
+          <img src="image/trainers-photo-wrap-elena.jpg" alt="Елена Соколова" class="trainers__photo" loading="lazy">
+          <div class="trainers__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="trainers__info">
+          <h3 class="trainers__name">ЕЛЕНА СОКОЛОВА</h3>
+          <p class="trainers__spec">Пилатес, Йога</p>
+          <div class="trainers__social">
+            <a href="#" class="trainers__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="trainers__social-link" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section reviews animate-in" id="reviews">
+    <h2 class="section__title"><span class="section__title_accent">ОТЗЫВЫ</span></h2>
+    <div class="reviews__slider">
+      <div class="reviews__arrows">
+        <button type="button" class="reviews__arrow" id="reviewsPrev" aria-label="Предыдущий отзыв"><i class="fa-solid fa-chevron-left"></i></button>
+        <button type="button" class="reviews__arrow" id="reviewsNext" aria-label="Следующий отзыв"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="reviews__track" id="reviewsTrack">
+        <div class="reviews__slide">
+          <div class="reviews__card">
+            <img src="image/review-maria.jpg" alt="Мария" class="reviews__avatar" loading="lazy">
+            <h3 class="reviews__name">МАРИЯ</h3>
+            <p class="reviews__text">Занимаюсь в MOVE уже полгода. Йога и стретчинг — моя отдушина. Тренеры выжимают по полной, атмосфера боевая.</p>
+          </div>
+        </div>
+        <div class="reviews__slide">
+          <div class="reviews__card">
+            <img src="image/review-dmitry.jpg" alt="Дмитрий" class="reviews__avatar" loading="lazy">
+            <h3 class="reviews__name">ДМИТРИЙ</h3>
+            <p class="reviews__text">HIIT с Максимом — огонь. За месяц сбросил 4 кг и стал выносливее. Рекомендую всем, кто хочет результат без компромиссов.</p>
+          </div>
+        </div>
+        <div class="reviews__slide">
+          <div class="reviews__card">
+            <img src="image/review-olga.jpg" alt="Ольга" class="reviews__avatar" loading="lazy">
+            <h3 class="reviews__name">ОЛЬГА</h3>
+            <p class="reviews__text">Пилатес с Еленой изменил осанку и самоощущение. Студия в духе «никакой расслабленности» — именно то, что искала.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__dots" id="reviewsDots">
+        <button type="button" class="reviews__dot is-active" aria-label="Отзыв 1" data-index="0"></button>
+        <button type="button" class="reviews__dot" aria-label="Отзыв 2" data-index="1"></button>
+        <button type="button" class="reviews__dot" aria-label="Отзыв 3" data-index="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacts">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__block">
+          <h3 class="footer__block-title">КОНТАКТЫ</h3>
+          <div class="footer__contacts">
+            <p><i class="fa-solid fa-location-dot"></i> г. Москва, ул. Примерная, д. 1</p>
+            <p><a href="tel:+79991234567"><i class="fa-solid fa-phone"></i> +7 (999) 123-45-67</a></p>
+            <p><a href="mailto:hello@movestudio.ru"><i class="fa-solid fa-envelope"></i> hello@movestudio.ru</a></p>
+          </div>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__block-title">МЫ В <span>СЕТИ</span></h3>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="footer__social-link" aria-label="VK"><i class="fa-brands fa-vk"></i></a>
+          </div>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__block-title">НАЙТИ НАС</h3>
+          <div class="footer__map">МЫ ЗДЕСЬ</div>
+        </div>
+      </div>
+      <p class="footer__copy">© MOVE, 2025</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
